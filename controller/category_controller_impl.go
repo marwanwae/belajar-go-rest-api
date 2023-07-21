@@ -14,7 +14,7 @@ type CategoryControllerImpl struct {
 	CategoryService services.CategoryService
 }
 
-func NewCategoryController(categoryService services.CategoryService) CategoryController {
+func NewCategoryController(categoryService services.CategoryService) *CategoryControllerImpl {
 	return &CategoryControllerImpl{
 		CategoryService: categoryService,
 	}
